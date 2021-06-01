@@ -77,7 +77,8 @@ def pepFunc():
         'N': "Asparagyl",
         'O': "Pyrrolysyl",
         'P': "Prolinyl",
-        'Q': "Arginyl",
+        'Q': "Glutamyl",
+        'R': "Arginyl",
         'S': "Serinyl",
         'T': "Threonyl",
         'U': "Selenocystyl",
@@ -122,6 +123,7 @@ def pepFunc():
             else:
                 pepTide = pepTide + (pepper[script[roNome]])
         roNome=roNome+1
+    print('Your amino acid peptide is:')
     print(pepTide)
 
 
@@ -132,6 +134,7 @@ print('Some letters such as B, J, Z, and X can refer to multiple amino acids.')
 print('For the sake of not losing my sanity:')
 print('B will be asparagyl or aspartic acid. J will be leucyl or isoleucine.')
 print('Z and X will be glutamyl or glutamic acid.')
+print(' ')
 
 script = input("Enter your script: ")
 
